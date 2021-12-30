@@ -1,13 +1,13 @@
 .button{
     background: var(--purple);
+    border:none;
     color: var(--white);
     font: var(--button);
-    padding-inline-start: 24px;
-    padding-inline-end: 24px;
     padding-block-start: 13px;
     padding-block-end: 13px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
     text-transform: uppercase;
-    border:none;
 }
 
 .button.is-secondary{
