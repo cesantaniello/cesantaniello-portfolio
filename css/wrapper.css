@@ -1,0 +1,6 @@
+.wrapper {
+    max-inline-size: 100vh;
+    padding-inline-end: 1rem;
+    padding-inline-start: 1rem;
+    margin: auto;
+}
