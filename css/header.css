@@ -1,6 +1,9 @@
 .header {
     align-items: center;
+    backdrop-filter: blur(0.5rem);
+    block-size: 5rem;
     display: flex;
     justify-content: space-between;
-    block-size: 6rem;
+    position: sticky;
+    top: 0;
 }

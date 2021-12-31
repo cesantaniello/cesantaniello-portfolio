@@ -29,3 +29,22 @@
     font: var(--headline5);
     display: block;
 }
+
+@media screen and (min-width: 768px){
+    .hero{
+        display: flex;
+        gap: 2rem;
+    }
+    .hero-description{
+        max-inline-size: 28rem;
+    }
+    .hero-image{
+        text-align: start;
+        box-shadow: none;
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+}
