@@ -9,11 +9,16 @@
 }
 
 .hero-image{
-    text-align: center;
-    left: 0px;
-    top: 0px;
-    box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    left: 0px;
+    text-align: center;
+    top: 0px;
+}
+
+.hero-image img{
+    block-size: auto;
+    max-inline-size: 100%;
 }
 
 .hero-social{
@@ -26,8 +31,8 @@
 }
 
 .hero h1 span:first-child{
-    font: var(--headline5);
     display: block;
+    font: var(--headline5);
 }
 
 @media screen and (min-width: 768px){
@@ -39,12 +44,8 @@
         max-inline-size: 28rem;
     }
     .hero-image{
-        text-align: start;
         box-shadow: none;
         flex: 1;
+        text-align: start;
     }
-}
-
-@media screen and (min-width: 1024px){
-
 }
