@@ -29,5 +29,6 @@ body {
     background: var(--gradient);
     color: var(--purple);
     font: var(--body1);
+    margin: 0;
     min-block-size: 100vh;
 }
