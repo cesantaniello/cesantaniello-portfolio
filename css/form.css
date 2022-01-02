@@ -3,3 +3,20 @@
     flex-direction: column;
     gap: 0.25rem;
 }
+
+.form label > *{
+    display: flex;
+    flex-direction: column;
+    font: var(--button);
+}
+
+.form input, .form textarea{
+    border: 2px solid #858C94;
+    border-radius: 0.5rem;
+    font: var(--body1);
+    margin-block-start: 0.5rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-start: 0.75rem;
+    padding-inline-end: 0.75rem;
+}

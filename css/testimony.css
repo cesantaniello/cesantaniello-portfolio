@@ -9,19 +9,6 @@
     gap: 1rem;
 }
 
-.testimony-title{
-    align-self: flex-start;
-    background: var(--purple);
-    box-shadow: 4px 4px 4px var(--white);
-    color: var(--white);
-    font: var(--headline5);
-    padding-block-start: 0.25rem;
-    padding-block-end: 0.25rem;
-    padding-inline-start: 0.5rem;
-    padding-inline-end: 0.5rem;
-    text-decoration: none;
-}
-
 .testimony-image img {
     max-inline-size: 100%;
 }
