@@ -21,10 +21,6 @@
     max-inline-size: 100%;
 }
 
-.hero-social{
-    padding-block-end: 1.5rem;
-}
-
 .hero h1{
     font: var(--headline3);
     margin: 0;
