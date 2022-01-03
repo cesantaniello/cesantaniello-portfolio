@@ -83,7 +83,7 @@
             </div>          
         </div>
 
-        <form action="" method="POST" class="form">
+        <!-- <form action="" class="form" id="form">
             <h2 class="title">Hablemos</h2>
             <p>Si estás interesado en trabajar conmigo en tu próximo proyecto, no dudes en ponerte en contacto.</p>
             <label for="form-name">Nombre Completo</label>
@@ -93,7 +93,21 @@
             <label for="form-message">Mensaje</label>
             <textarea required name="message" placeholder="Tu mensaje aquí" id="form-message" cols="30" rows="7"></textarea>
             <button type="submit" class="button">Enviar mensaje</button>
-        </form>
+        </form> -->
+        <div>
+            <form id="form" action="" class="form">
+                <h2 class="title">Hablemos</h2>
+                <p>Si estás interesado en trabajar conmigo en tu próximo proyecto, no dudes en ponerte en contacto.</p>
+                <label for="name">Nombre Completo </label>
+                <input name="name" required type="text" id="name" placeholder="Tu nombre">
+                <label for="email">Correo electrónico </label>
+                <input name="email" type="text" id="email" required placeholder="tu@mail.com">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Tu mensaje aquí" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="button">Enviar mensaje</button>
+            </form>
+            <a href="mailto:carlos.e.santaniello@gmail.com" id="trucazo"></a>        
+        </div>
 
         <footer class="footer">
             <div class="social">
@@ -107,7 +121,19 @@
                 <p>Copyleft Release 2022 🄯</p>
             </div>
         </footer>
+        <script>
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#trucazo')
 
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        const form = new FormData(this)
+        $buttonMailto.setAttribute('href', `mailto:carlos.e.santaniello@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+        $buttonMailto.click()
+    }
+        </script>
     </div>
 </body>
 </html>
