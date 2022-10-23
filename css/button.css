@@ -12,3 +12,7 @@
     text-transform: uppercase;
     margin: 0.25rem;
 }
+
+.button:hover{
+    background: var(--purple-hover);
+}
