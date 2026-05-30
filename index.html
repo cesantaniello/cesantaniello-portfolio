@@ -4,486 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdn.jsdelivr.net kit.fontawesome.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn.jsdelivr.net; font-src 'self' fonts.gstatic.com kit.fontawesome.com ka-f.fontawesome.com; img-src 'self' https: data:; connect-src 'self'; frame-ancestors 'self';">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
     <title>Carlos Santaniello's Portfolio</title>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-    crossorigin="anonymous"><link rel="stylesheet" href="./css/index.css">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
-    crossorigin="anonymous"></script>    
-    <script src="https://kit.fontawesome.com/f68072faa2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <nav class="menu" aria-label="main-navigation">
                 <ul>
-                    <li>
-                        <a class="is-active" href="#main">About me</a>
-                    </li>                    
-                    <li>
-                        <a href="#project">Projects</a>
-                    </li>                    
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+                    <li><a class="is-active" href="#main">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <button class="button">CS</button>
         </header>
-
-        <!--Main-->
         <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
-                <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688675/jufn7l6xdj5utyvbexyj.webp" width="256" height="256" alt="hero">
+                <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688675/jufn7l6xdj5utyvbexyj.webp" width="256" height="256" alt="Carlos Santaniello" fetchpriority="high">
             </div>
             <div class="hero-description">
                 <h1 class="title-name">Carlos E. Santaniello</h1>
                 <h2 class="subtitle">MERN Fullstack Developer</h2>
                 <h3 class="subtitle">Making better solutions for you</h3>
-                <h4>Your ideas + my IT solutions = Your organic growth 🚀 </h4>
+                <h4>Your ideas + my IT solutions = Your organic growth &#128640;</h4>
                 <div class="social">
-                    <a class="button-icon fa-solid fa-envelope" href="mailto:carlos.e.santaniello@gmail.com"></a>
-                    <a class="button-icon fa-brands fa-github" href="https://github.com/cesantaniello"></a>
-                    <a class="button-icon fa-brands fa-linkedin" href="https://www.linkedin.com/in/carlos-e-santaniello/?locale=en_US"></a>
+                    <a class="button-icon fa-solid fa-envelope" href="#contact" data-email-user="carlos.e.santaniello" data-email-domain="gmail.com" onclick="this.href='mailto:'+this.dataset.emailUser+'@'+this.dataset.emailDomain" aria-label="Send email to Carlos" title="Contact via email"></a>
+                    <a class="button-icon fa-brands fa-github" href="https://github.com/cesantaniello" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"></a>
+                    <a class="button-icon fa-brands fa-linkedin" href="https://www.linkedin.com/in/carlos-e-santaniello/?locale=en_US" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"></a>
                 </div>
-                <a href="https://agora-ecommerce.s3.eu-west-3.amazonaws.com/CV+Carlos+Frontend+Developer.pdf" class="button">Download CV</a>
-            </div>        
-        </section>
-    </div>
-    <!--Projects-->
-
-    <section id="projects">
-        <div class="container mt-5 mb-5">
-            <h1 class="h3 text-center pb-4">Some of my 80+ projects uploaded to GitHub</h1>
-            <div>
-                <div class="container">
-
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688539/mvcuin0x0tnuuelvfn0y.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 0">
-                        <div class="card-body">
-                          <h5 class="Project">Agora</h5>
-                          <p class="card-text">Market place of the most popular videogames in the market</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://github.com/cesantaniello/agora_client" target="_blank" class="button">code</a>
-                              <a href="https://github.com/cesantaniello/agora_server" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688290/ofz0a0ypk7c8g0zym6ib.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                          <h5 class="Project">Youtec</h5>            
-                          <p class="card-text">Trilingual website developed for the corporation YouTec Consulting</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://www.youteconsulting.com/" target="_blank" class="button">project</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688180/src1adlcih4ssvy8axkz.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                          <h5 class="Project">Cerveceras Valencianas</h5>            
-                          <p class="card-text">Bilingual website developed for company Cerveceras Valencianas</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://cerveseresvalencianes.org/" target="_blank" class="button">project</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688035/ltugrowlg4vysl0tvsry.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                          <h5 class="Project">Real Journal App</h5>            
-                          <p class="card-text">A web app diary that you can upload images and notes limitless</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://awesome-journal-app.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/real-journal-app" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656687806/viqptfvyank6ejiz73l3.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 4">
-                        <div class="card-body">
-                          <h5 class="Project">Crypto Prices App</h5>            
-                          <p class="card-text">Web App which shows cryptocurrencies prices in real time</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://crypto-prices-app.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/crypto-price" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656611838/lhotd0lasucmmhmzzdqv.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 5">
-                        <div class="card-body">
-                          <h5 class="Project">VelVet</h5>            
-                          <p class="card-text">A fancy Veterinary Administration System made in JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://vel-vet.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/VelVet" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656611838/lhotd0lasucmmhmzzdqv.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 6">
-                        <div class="card-body">
-                          <h5 class="Project">VelVet PWA</h5>            
-                          <p class="card-text">A Progressive Web App Veterinary Administration System</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://github.com/cesantaniello/VelVet-PWA" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656779175/vjylrrjpipp4req9dozu.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 7">
-                        <div class="card-body">
-                          <h5 class="Project">Big Budget</h5>            
-                          <p class="card-text">A web app to handle your budget made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://administracion-presupuesto.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/BigBudget" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656781931/u7p3yhnjifvg4vmckxxm.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 8">
-                        <div class="card-body">
-                          <h5 class="Project">Budget App</h5>            
-                          <p class="card-text">Another web app to handle your budget made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://cesantaniello.github.io/BudgetApp/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/BudgetApp" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656782551/dzedwoyznribkaxjn3zs.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 9">
-                        <div class="card-body">
-                          <h5 class="Project">InSeguro</h5>            
-                          <p class="card-text">A car insurance web app made with Prototypes in JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://cotiza-seguros-coche.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/In-Seguro" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656782977/ybdnjsciufslffycoj5b.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 10">
-                        <div class="card-body">
-                          <h5 class="Project">Buscador</h5>            
-                          <p class="card-text">A car price searcher web app made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://buscador-precios-coches.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/Buscador" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656784190/pdn4fafric9eixgd9vtl.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 11">
-                        <div class="card-body">
-                          <h5 class="Project">ClimApp</h5>            
-                          <p class="card-text">Another Weather Web App made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://clima-app-fetch-api.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/ClimApp" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656849271/sesqf5tjydecf0gde64i.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 12">
-                        <div class="card-body">
-                          <h5 class="Project">Prestame</h5>            
-                          <p class="card-text">A web app to handle your loans made with React</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://prestame.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/prestame" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656849601/mrnsagw3vjet68fr2eeg.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 13">
-                        <div class="card-body">
-                          <h5 class="Project">Picsya</h5>            
-                          <p class="card-text">A picture searching web app made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://picsya.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/picsya" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656862898/j0nzuyfwwvmnf9hwypt9.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 14">
-                        <div class="card-body">
-                          <h5 class="Project">Gift-a-gif</h5>            
-                          <p class="card-text">A gif picture searching web app made with React</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://gift-a-gif.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/gift-a-gif" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656850032/nlxslskifuuxzpezv9l2.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 15">
-                        <div class="card-body">
-                          <h5 class="Project">Liricas</h5>            
-                          <p class="card-text">A lyrics searching web app made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://liricas.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/liricas" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656863559/nth7nz3c3a5tjpcg3ic3.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 16">
-                        <div class="card-body">
-                          <h5 class="Project">Your Favorite Heroes</h5>            
-                          <p class="card-text">A WebApp which displays your favorite heroes made with React</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://your-favorite-heroes.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/Your-favorite-heroes" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656864895/h1ek8etbseppatcrk7da.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 17">
-                        <div class="card-body">
-                          <h5 class="Project">Rick and Morty</h5>            
-                          <p class="card-text">A web app to show Rick and Morty characters made with Vue and Vuex</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://rick-and-morty-characters-vue.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/rick-and-morty-vue" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656869778/nm5af1v9jgfjii2skykk.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 18">
-                        <div class="card-body">
-                          <h5 class="Project">Trolleyes</h5>            
-                          <p class="card-text">A shopping cart (trolleyes) made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://trolleyes-js.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/TrolleyesJS" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656870162/agoqt6wo77pi02unq39w.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 19">
-                        <div class="card-body">
-                          <h5 class="Project">MisTweets</h5>            
-                          <p class="card-text">A ToDo list which shows tweets made with JavaScript</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://mis-tweets.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/MisTweets" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656870562/ni3vdnfotofvyv9mj7a4.webp"
-                          width="320" height="240" class="card-img-top" alt="Project 20">
-                        <div class="card-body">
-                          <h5 class="Project">ToDo React App</h5>            
-                          <p class="card-text">A ToDo list made with React and Bootstrap. Deployed on Netlify</p>
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <a href="https://listatodo-app.netlify.app/" target="_blank" class="button">project</a>
-                              <a href="https://github.com/cesantaniello/Todo-React-App" target="_blank" class="button">code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
+                <a href="https://agora-ecommerce.s3.eu-west-3.amazonaws.com/CV+Carlos+Frontend+Developer.pdf" class="button download-button" target="_blank" rel="noopener noreferrer">DOWNLOAD CV</a>
             </div>
-        </div>
-    </section>        
-        
-        <div>
-            <form id="form" action="" class="form">
-                <h2 class="title">Contact me</h2>
-                <label for="name">Fullname </label>
-                <input name="name" required type="text" id="name" placeholder="Your name">
-                <label for="email">Email </label>
-                <input name="email" type="text" id="email" required placeholder="name@email.com">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your message here" id="" cols="30" rows="10"></textarea>
-                <button type="submit" class="button">Send message</button>
-            </form>
-            <a href="mailto:carlos.e.santaniello@gmail.com" id="mail-to"></a>        
-        </div>
+        </section>
+        <section id="projects">
+            <div class="container mt-5 mb-5">
+                <h1 class="h3 text-center pb-4">Some of my 80+ projects uploaded to GitHub</h1>
+                <div><div class="container"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688539/mvcuin0x0tnuuelvfn0y.webp" width="320" height="240" class="card-img-top" alt="Agora" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Agora</h5><p class="card-text">Market place of the most popular videogames in the market</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://github.com/cesantaniello/agora_client" target="_blank" rel="noopener noreferrer" class="button">code</a><a href="https://github.com/cesantaniello/agora_server" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688290/ofz0a0ypk7c8g0zym6ib.webp" width="320" height="240" class="card-img-top" alt="Youtec" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Youtec</h5><p class="card-text">Trilingual website developed for the corporation YouTec Consulting</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://www.youteconsulting.com/" target="_blank" rel="noopener noreferrer" class="button">project</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688180/src1adlcih4ssvy8axkz.webp" width="320" height="240" class="card-img-top" alt="Cerveceras Valencianas" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Cerveceras Valencianas</h5><p class="card-text">Bilingual website developed for company Cerveceras Valencianas</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://cerveseresvalencianes.org/" target="_blank" rel="noopener noreferrer" class="button">project</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656688035/ltugrowlg4vysl0tvsry.webp" width="320" height="240" class="card-img-top" alt="Real Journal App" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Real Journal App</h5><p class="card-text">A web app diary that you can upload images and notes limitless</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://awesome-journal-app.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/real-journal-app" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656687806/viqptfvyank6ejiz73l3.webp" width="320" height="240" class="card-img-top" alt="Crypto Prices App" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Crypto Prices App</h5><p class="card-text">Web App which shows cryptocurrencies prices in real time</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://crypto-prices-app.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/crypto-price" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656611838/lhotd0lasucmmhmzzdqv.webp" width="320" height="240" class="card-img-top" alt="VelVet" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">VelVet</h5><p class="card-text">A fancy Veterinary Administration System made in JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://vel-vet.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/VelVet" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656611838/lhotd0lasucmmhmzzdqv.webp" width="320" height="240" class="card-img-top" alt="VelVet PWA" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">VelVet PWA</h5><p class="card-text">A Progressive Web App Veterinary Administration System</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://github.com/cesantaniello/VelVet-PWA" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656779175/vjylrrjpipp4req9dozu.webp" width="320" height="240" class="card-img-top" alt="Big Budget" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Big Budget</h5><p class="card-text">A web app to handle your budget made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://administracion-presupuesto.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/BigBudget" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656781931/u7p3yhnjifvg4vmckxxm.webp" width="320" height="240" class="card-img-top" alt="Budget App" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Budget App</h5><p class="card-text">Another web app to handle your budget made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://cesantaniello.github.io/BudgetApp/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/BudgetApp" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656782551/dzedwoyznribkaxjn3zs.webp" width="320" height="240" class="card-img-top" alt="InSeguro" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">InSeguro</h5><p class="card-text">A car insurance web app made with Prototypes in JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://cotiza-seguros-coche.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/In-Seguro" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656782977/ybdnjsciufslffycoj5b.webp" width="320" height="240" class="card-img-top" alt="Buscador" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Buscador</h5><p class="card-text">A car price searcher web app made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://buscador-precios-coches.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/Buscador" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656784190/pdn4fafric9eixgd9vtl.webp" width="320" height="240" class="card-img-top" alt="ClimApp" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">ClimApp</h5><p class="card-text">Another Weather Web App made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://clima-app-fetch-api.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/ClimApp" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656849271/sesqf5tjydecf0gde64i.webp" width="320" height="240" class="card-img-top" alt="Prestame" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Prestame</h5><p class="card-text">A web app to handle your loans made with React</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://prestame.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/prestame" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656849601/mrnsagw3vjet68fr2eeg.webp" width="320" height="240" class="card-img-top" alt="Picsya" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Picsya</h5><p class="card-text">A picture searching web app made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://picsya.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/picsya" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656862898/j0nzuyfwwvmnf9hwypt9.webp" width="320" height="240" class="card-img-top" alt="Gift-a-gif" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Gift-a-gif</h5><p class="card-text">A gif picture searching web app made with React</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://gift-a-gif.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/gift-a-gif" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656850032/nlxslskifuuxzpezv9l2.webp" width="320" height="240" class="card-img-top" alt="Liricas" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Liricas</h5><p class="card-text">A lyrics searching web app made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://liricas.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/liricas" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656863559/nth7nz3c3a5tjpcg3ic3.webp" width="320" height="240" class="card-img-top" alt="Your Favorite Heroes" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Your Favorite Heroes</h5><p class="card-text">A WebApp which displays your favorite heroes made with React</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://your-favorite-heroes.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/Your-favorite-heroes" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656864895/h1ek8etbseppatcrk7da.webp" width="320" height="240" class="card-img-top" alt="Rick and Morty" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Rick and Morty</h5><p class="card-text">A web app to show Rick and Morty characters made with Vue and Vuex</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://rick-and-morty-characters-vue.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/rick-and-morty-vue" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656869778/nm5af1v9jgfjii2skykk.webp" width="320" height="240" class="card-img-top" alt="Trolleyes" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">Trolleyes</h5><p class="card-text">A shopping cart (trolleyes) made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://trolleyes-js.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/TrolleyesJS" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656870162/agoqt6wo77pi02unq39w.webp" width="320" height="240" class="card-img-top" alt="MisTweets" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">MisTweets</h5><p class="card-text">A ToDo list which shows tweets made with JavaScript</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://mis-tweets.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/MisTweets" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                    <div class="col"><div class="card shadow-sm"><img src="https://res.cloudinary.com/ddvyehc8b/image/upload/v1656870562/ni3vdnfotofvyv9mj7a4.webp" width="320" height="240" class="card-img-top" alt="ToDo React App" loading="lazy" decoding="async"><div class="card-body"><h5 class="Project">ToDo React App</h5><p class="card-text">A ToDo list made with React and Bootstrap. Deployed on Netlify</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><a href="https://listatodo-app.netlify.app/" target="_blank" rel="noopener noreferrer" class="button">project</a><a href="https://github.com/cesantaniello/Todo-React-App" target="_blank" rel="noopener noreferrer" class="button">code</a></div></div></div></div></div>
+                </div></div></div>
+            </div>
+        </section>
 
-    <div class="wrapper">
+        <form id="form" action="" method="post" class="form">
+            <h2 class="title">Contact me</h2>
+            <label for="name">Fullname</label>
+            <input name="name" required type="text" id="name" placeholder="Your name" maxlength="100" autocomplete="name">
+            <label for="email">Email</label>
+            <input name="email" required type="email" id="email" placeholder="name@email.com" maxlength="254" autocomplete="email">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here" cols="30" rows="10" maxlength="2000" autocomplete="off"></textarea>
+            <div style="opacity:0;position:absolute;top:0;left:0;height:0;width:0;z-index:-1;overflow:hidden;" aria-hidden="true">
+                <label for="website">Leave this field empty</label>
+                <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="button">Send message</button>
+        </form>
+
         <footer class="footer" id="contact">
             <div class="social">
-                <a class="button-icon fa-solid fa-envelope" href="#"></a>
-                <a class="button-icon fa-brands fa-github" href="#"></a>
-                <a class="button-icon fa-brands fa-linkedin" href="#"></a>
+                <a class="button-icon fa-solid fa-envelope" href="#contact" data-email-user="carlos.e.santaniello" data-email-domain="gmail.com" onclick="this.href='mailto:'+this.dataset.emailUser+'@'+this.dataset.emailDomain" aria-label="Email" aria-hidden="true"></a>
+                <a class="button-icon fa-brands fa-github" href="https://github.com/cesantaniello" target="_blank" rel="noopener noreferrer" aria-hidden="true"></a>
+                <a class="button-icon fa-brands fa-linkedin" href="https://www.linkedin.com/in/carlos-e-santaniello/?locale=en_US" target="_blank" rel="noopener noreferrer" aria-hidden="true"></a>
             </div>
             <div class="footer-copyleft">
-                <p>Made with 🤍 by <a class="creator" href="https://github.com/cesantaniello">Carlos</a</p>
-                <p>Copyleft Release 2022 🄯</p>
+                <p>Made with &#10084;&#65039; by <a class="creator" href="https://github.com/cesantaniello" target="_blank" rel="noopener noreferrer">Carlos</a></p>
+                <p><a class="creator" href="https://github.com/cesantaniello" target="_blank" rel="noopener noreferrer">Copyleft Release 2022 &#127135;</a></p>
             </div>
         </footer>
-        <script>
-            const $form = document.querySelector('#form')
-            const $buttonMailto = document.querySelector('#mail-to')
-
-            $form.addEventListener('submit', handleSubmit)
-
-            function handleSubmit(event) {
-                event.preventDefault()
-                const form = new FormData(this)
-                $buttonMailto.setAttribute('href', `mailto:carlos.e.santaniello@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
-                $buttonMailto.click()
-            }
-        </script>
     </div>
+
+    <script>
+      (function() {
+        'use strict';
+        var form = document.getElementById('form');
+        if (!form) return;
+        var lastSubmitTime = 0;
+        var RATE_LIMIT_MS = 60000;
+        form.addEventListener('submit', function(e) {
+          var honeypot = document.getElementById('website');
+          if (honeypot && honeypot.value.trim() !== '') {
+            e.preventDefault();
+            return false;
+          }
+          var now = Date.now();
+          if (lastSubmitTime !== 0 && now - lastSubmitTime < RATE_LIMIT_MS) {
+            e.preventDefault();
+            alert('Please wait a minute before sending another message.');
+            return false;
+          }
+          lastSubmitTime = now;
+        });
+      })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f68072faa2.js" crossorigin="anonymous"></script>
 </body>
 </html>
