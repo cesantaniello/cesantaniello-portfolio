@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdn.jsdelivr.net kit.fontawesome.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn.jsdelivr.net; font-src 'self' fonts.gstatic.com kit.fontawesome.com ka-f.fontawesome.com; img-src 'self' https: data:; connect-src 'self'; frame-ancestors 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdn.jsdelivr.net kit.fontawesome.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn.jsdelivr.net; font-src 'self' fonts.gstatic.com kit.fontawesome.com ka-f.fontawesome.com; img-src 'self' https: data:; connect-src 'self' ka-f.fontawesome.com; frame-ancestors 'self';">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
     <title>Carlos Santaniello's Portfolio</title>
@@ -102,29 +102,7 @@
         </footer>
     </div>
 
-    <script>
-      (function() {
-        'use strict';
-        var form = document.getElementById('form');
-        if (!form) return;
-        var lastSubmitTime = 0;
-        var RATE_LIMIT_MS = 60000;
-        form.addEventListener('submit', function(e) {
-          var honeypot = document.getElementById('website');
-          if (honeypot && honeypot.value.trim() !== '') {
-            e.preventDefault();
-            return false;
-          }
-          var now = Date.now();
-          if (lastSubmitTime !== 0 && now - lastSubmitTime < RATE_LIMIT_MS) {
-            e.preventDefault();
-            alert('Please wait a minute before sending another message.');
-            return false;
-          }
-          lastSubmitTime = now;
-        });
-      })();
-    </script>
+    <script src="./js/form.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f68072faa2.js" crossorigin="anonymous"></script>
